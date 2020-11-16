@@ -1,3 +1,2 @@
-# Strapi application
-
-A quick description of your strapi application
+# @NewSchool/Platform-Management-CMS
+> Uma aplicação Strapi pra gerenciar o conteúdo da plataforma de educação da NewSchool
