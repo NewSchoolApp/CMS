@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercicios",
+  "info": {
+    "name": "exercicio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "pergunta": {
+      "type": "text"
+    },
+    "primeira_alternativa": {
+      "type": "string"
+    },
+    "segunda_alternativa": {
+      "type": "string"
+    },
+    "terceira_alternativa": {
+      "type": "string"
+    },
+    "quarta_alternativa": {
+      "type": "string"
+    },
+    "alternativa_certa": {
+      "type": "string"
+    },
+    "ordem": {
+      "type": "integer"
+    },
+    "parte": {
+      "via": "exercicios",
+      "model": "parte"
+    }
+  }
+}

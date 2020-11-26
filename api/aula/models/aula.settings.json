@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aulas",
+  "info": {
+    "name": "Aula",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "ordem": {
+      "type": "integer"
+    },
+    "curso": {
+      "via": "aulas",
+      "model": "curso"
+    },
+    "partes": {
+      "collection": "parte",
+      "via": "aula"
+    }
+  }
+}

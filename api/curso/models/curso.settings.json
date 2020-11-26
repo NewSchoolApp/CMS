@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cursos",
+  "info": {
+    "name": "Curso",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "nomeDoAutor": {
+      "type": "string"
+    },
+    "descricaoDoAutor": {
+      "type": "text"
+    },
+    "horas": {
+      "type": "integer"
+    },
+    "capa": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "aulas": {
+      "collection": "aula",
+      "via": "curso"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

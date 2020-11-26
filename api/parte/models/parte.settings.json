@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partes",
+  "info": {
+    "name": "Parte",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ordem": {
+      "type": "integer"
+    },
+    "aula": {
+      "via": "partes",
+      "model": "aula"
+    },
+    "exercicios": {
+      "collection": "exercicio",
+      "via": "parte"
+    }
+  }
+}
