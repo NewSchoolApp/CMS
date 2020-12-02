@@ -13,7 +13,7 @@ module.exports = {
 			data.slug = slugify(data.titulo, {lower: true});
 		},
 		async beforeUpdate(params, data) {
-			data.slug = slugify(data.titulo, {lower: true});
+			if (data.titulo) data.slug = slugify(data.titulo, {lower: true});
 		},
 	},
 }
