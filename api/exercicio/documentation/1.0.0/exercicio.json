@@ -516,7 +516,15 @@
     "schemas": {
       "Exercicio": {
         "required": [
-          "id"
+          "id",
+          "titulo",
+          "pergunta",
+          "primeira_alternativa",
+          "segunda_alternativa",
+          "terceira_alternativa",
+          "quarta_alternativa",
+          "alternativa_certa",
+          "ordem"
         ],
         "properties": {
           "id": {
@@ -548,7 +556,10 @@
           },
           "parte": {
             "required": [
-              "id"
+              "id",
+              "titulo",
+              "video",
+              "ordem"
             ],
             "properties": {
               "id": {
@@ -593,6 +604,16 @@
         }
       },
       "NewExercicio": {
+        "required": [
+          "titulo",
+          "pergunta",
+          "primeira_alternativa",
+          "segunda_alternativa",
+          "terceira_alternativa",
+          "quarta_alternativa",
+          "alternativa_certa",
+          "ordem"
+        ],
         "properties": {
           "titulo": {
             "type": "string"

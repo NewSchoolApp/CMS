@@ -12,17 +12,20 @@
   },
   "attributes": {
     "titulo": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": false
     },
     "descricao": {
       "type": "text"
     },
     "ordem": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "curso": {
-      "via": "aulas",
-      "model": "curso"
+      "model": "curso",
+      "via": "aulas"
     },
     "partes": {
       "collection": "parte",

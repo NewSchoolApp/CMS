@@ -12,19 +12,24 @@
   },
   "attributes": {
     "titulo": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "descricao": {
       "type": "text"
     },
     "nomeDoAutor": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "descricaoDoAutor": {
       "type": "text"
     },
     "horas": {
-      "type": "integer"
+      "type": "integer",
+      "unique": false,
+      "required": true
     },
     "capa": {
       "model": "file",
@@ -33,11 +38,11 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "aulas": {
-      "collection": "aula",
-      "via": "curso"
+      "via": "curso",
+      "collection": "aula"
     },
     "slug": {
       "type": "string"

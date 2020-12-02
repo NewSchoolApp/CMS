@@ -516,7 +516,10 @@
     "schemas": {
       "Parte": {
         "required": [
-          "id"
+          "id",
+          "titulo",
+          "video",
+          "ordem"
         ],
         "properties": {
           "id": {
@@ -600,7 +603,9 @@
           },
           "aula": {
             "required": [
-              "id"
+              "id",
+              "titulo",
+              "ordem"
             ],
             "properties": {
               "id": {
@@ -639,7 +644,15 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "titulo",
+                "pergunta",
+                "primeira_alternativa",
+                "segunda_alternativa",
+                "terceira_alternativa",
+                "quarta_alternativa",
+                "alternativa_certa",
+                "ordem"
               ],
               "properties": {
                 "id": {
@@ -691,6 +704,10 @@
         }
       },
       "NewParte": {
+        "required": [
+          "titulo",
+          "ordem"
+        ],
         "properties": {
           "titulo": {
             "type": "string"

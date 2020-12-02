@@ -12,32 +12,40 @@
   },
   "attributes": {
     "titulo": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "pergunta": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "primeira_alternativa": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "segunda_alternativa": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "terceira_alternativa": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "quarta_alternativa": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "alternativa_certa": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "ordem": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "parte": {
-      "via": "exercicios",
-      "model": "parte"
+      "model": "parte",
+      "via": "exercicios"
     }
   }
 }

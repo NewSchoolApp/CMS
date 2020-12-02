@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/26/2020 9:24:51 PM"
+    "x-generation-date": "12/02/2020 8:22:27 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4192,7 +4192,9 @@
     "schemas": {
       "Aula": {
         "required": [
-          "id"
+          "id",
+          "titulo",
+          "ordem"
         ],
         "properties": {
           "id": {
@@ -4209,7 +4211,11 @@
           },
           "curso": {
             "required": [
-              "id"
+              "id",
+              "titulo",
+              "nomeDoAutor",
+              "horas",
+              "capa"
             ],
             "properties": {
               "id": {
@@ -4257,7 +4263,10 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "titulo",
+                "video",
+                "ordem"
               ],
               "properties": {
                 "id": {
@@ -4303,6 +4312,10 @@
         }
       },
       "NewAula": {
+        "required": [
+          "titulo",
+          "ordem"
+        ],
         "properties": {
           "titulo": {
             "type": "string"
@@ -4336,7 +4349,11 @@
       },
       "Curso": {
         "required": [
-          "id"
+          "id",
+          "titulo",
+          "nomeDoAutor",
+          "horas",
+          "capa"
         ],
         "properties": {
           "id": {
@@ -4428,7 +4445,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "titulo",
+                "ordem"
               ],
               "properties": {
                 "id": {
@@ -4474,6 +4493,11 @@
         }
       },
       "NewCurso": {
+        "required": [
+          "titulo",
+          "nomeDoAutor",
+          "horas"
+        ],
         "properties": {
           "titulo": {
             "type": "string"
@@ -4513,7 +4537,15 @@
       },
       "Exercicio": {
         "required": [
-          "id"
+          "id",
+          "titulo",
+          "pergunta",
+          "primeira_alternativa",
+          "segunda_alternativa",
+          "terceira_alternativa",
+          "quarta_alternativa",
+          "alternativa_certa",
+          "ordem"
         ],
         "properties": {
           "id": {
@@ -4545,7 +4577,10 @@
           },
           "parte": {
             "required": [
-              "id"
+              "id",
+              "titulo",
+              "video",
+              "ordem"
             ],
             "properties": {
               "id": {
@@ -4590,6 +4625,16 @@
         }
       },
       "NewExercicio": {
+        "required": [
+          "titulo",
+          "pergunta",
+          "primeira_alternativa",
+          "segunda_alternativa",
+          "terceira_alternativa",
+          "quarta_alternativa",
+          "alternativa_certa",
+          "ordem"
+        ],
         "properties": {
           "titulo": {
             "type": "string"
@@ -4632,7 +4677,10 @@
       },
       "Parte": {
         "required": [
-          "id"
+          "id",
+          "titulo",
+          "video",
+          "ordem"
         ],
         "properties": {
           "id": {
@@ -4716,7 +4764,9 @@
           },
           "aula": {
             "required": [
-              "id"
+              "id",
+              "titulo",
+              "ordem"
             ],
             "properties": {
               "id": {
@@ -4755,7 +4805,15 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "titulo",
+                "pergunta",
+                "primeira_alternativa",
+                "segunda_alternativa",
+                "terceira_alternativa",
+                "quarta_alternativa",
+                "alternativa_certa",
+                "ordem"
               ],
               "properties": {
                 "id": {
@@ -4807,6 +4865,10 @@
         }
       },
       "NewParte": {
+        "required": [
+          "titulo",
+          "ordem"
+        ],
         "properties": {
           "titulo": {
             "type": "string"

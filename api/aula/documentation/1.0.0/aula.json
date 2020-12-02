@@ -516,7 +516,9 @@
     "schemas": {
       "Aula": {
         "required": [
-          "id"
+          "id",
+          "titulo",
+          "ordem"
         ],
         "properties": {
           "id": {
@@ -533,7 +535,11 @@
           },
           "curso": {
             "required": [
-              "id"
+              "id",
+              "titulo",
+              "nomeDoAutor",
+              "horas",
+              "capa"
             ],
             "properties": {
               "id": {
@@ -581,7 +587,10 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "titulo",
+                "video",
+                "ordem"
               ],
               "properties": {
                 "id": {
@@ -627,6 +636,10 @@
         }
       },
       "NewAula": {
+        "required": [
+          "titulo",
+          "ordem"
+        ],
         "properties": {
           "titulo": {
             "type": "string"

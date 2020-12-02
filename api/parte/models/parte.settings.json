@@ -12,7 +12,9 @@
   },
   "attributes": {
     "titulo": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": false
     },
     "descricao": {
       "type": "text"
@@ -24,18 +26,19 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": true
     },
     "ordem": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "aula": {
       "via": "partes",
       "model": "aula"
     },
     "exercicios": {
-      "collection": "exercicio",
-      "via": "parte"
+      "via": "parte",
+      "collection": "exercicio"
     }
   }
 }
