@@ -697,6 +697,9 @@
               }
             }
           },
+          "videoUrl": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -726,6 +729,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "videoUrl": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

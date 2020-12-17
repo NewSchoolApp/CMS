@@ -33,12 +33,15 @@
       "required": true
     },
     "aula": {
-      "via": "partes",
-      "model": "aula"
+      "model": "aula",
+      "via": "partes"
     },
     "exercicios": {
-      "via": "parte",
-      "collection": "exercicio"
+      "collection": "exercicio",
+      "via": "parte"
+    },
+    "videoUrl": {
+      "type": "string"
     }
   }
 }

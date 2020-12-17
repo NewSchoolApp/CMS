@@ -617,6 +617,9 @@
                     "type": "string"
                   }
                 },
+                "videoUrl": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },

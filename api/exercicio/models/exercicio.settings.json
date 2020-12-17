@@ -44,8 +44,8 @@
       "required": true
     },
     "parte": {
-      "model": "parte",
-      "via": "exercicios"
+      "via": "exercicios",
+      "model": "parte"
     }
   }
 }

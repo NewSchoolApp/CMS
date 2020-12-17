@@ -28,8 +28,8 @@
       "via": "aulas"
     },
     "partes": {
-      "collection": "parte",
-      "via": "aula"
+      "via": "aula",
+      "collection": "parte"
     }
   }
 }
