@@ -518,7 +518,6 @@
         "required": [
           "id",
           "titulo",
-          "video",
           "ordem"
         ],
         "properties": {
