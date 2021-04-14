@@ -41,11 +41,19 @@
       "required": true
     },
     "aulas": {
-      "via": "curso",
-      "collection": "aula"
+      "collection": "aula",
+      "via": "curso"
     },
     "slug": {
       "type": "string"
+    },
+    "ordenacao_da_trilhas": {
+      "collection": "ordenacao-da-trilha",
+      "via": "curso"
+    },
+    "pilars": {
+      "via": "cursos",
+      "collection": "pilar"
     }
   }
 }

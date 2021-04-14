@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/trilhas",
+      "handler": "trilha.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trilhas/count",
+      "handler": "trilha.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trilhas/:id",
+      "handler": "trilha.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/trilhas",
+      "handler": "trilha.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/trilhas/:id",
+      "handler": "trilha.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/trilhas/:id",
+      "handler": "trilha.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

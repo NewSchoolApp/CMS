@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/aulas": {
+    "/pilars": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Aula"
+                    "$ref": "#/components/schemas/Pilar"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Aula"
+          "Pilar"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Aula"
+                  "$ref": "#/components/schemas/Pilar"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Aula"
+          "Pilar"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAula"
+                "$ref": "#/components/schemas/NewPilar"
               }
             }
           }
         }
       }
     },
-    "/aulas/count": {
+    "/pilars/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Aula"
+          "Pilar"
         ],
         "parameters": []
       }
     },
-    "/aulas/{id}": {
+    "/pilars/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Aula"
+                  "$ref": "#/components/schemas/Pilar"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Aula"
+          "Pilar"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Aula"
+                  "$ref": "#/components/schemas/Pilar"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Aula"
+          "Pilar"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAula"
+                "$ref": "#/components/schemas/NewPilar"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Aula"
+          "Pilar"
         ],
         "parameters": [
           {
@@ -514,94 +514,26 @@
   },
   "components": {
     "schemas": {
-      "Aula": {
+      "Pilar": {
         "required": [
-          "id",
-          "titulo",
-          "ordem"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "titulo": {
+          "nome": {
             "type": "string"
           },
-          "descricao": {
-            "type": "string"
-          },
-          "ordem": {
-            "type": "integer"
-          },
-          "curso": {
-            "required": [
-              "id",
-              "titulo",
-              "nomeDoAutor",
-              "horas",
-              "capa"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "titulo": {
-                "type": "string"
-              },
-              "descricao": {
-                "type": "string"
-              },
-              "nomeDoAutor": {
-                "type": "string"
-              },
-              "descricaoDoAutor": {
-                "type": "string"
-              },
-              "horas": {
-                "type": "integer"
-              },
-              "capa": {
-                "type": "string"
-              },
-              "aulas": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "slug": {
-                "type": "string"
-              },
-              "ordenacao_da_trilhas": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "pilars": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "partes": {
+          "cursos": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "titulo",
-                "ordem"
+                "nomeDoAutor",
+                "horas",
+                "capa"
               ],
               "properties": {
                 "id": {
@@ -613,23 +545,38 @@
                 "descricao": {
                   "type": "string"
                 },
-                "video": {
+                "nomeDoAutor": {
                   "type": "string"
                 },
-                "ordem": {
+                "descricaoDoAutor": {
+                  "type": "string"
+                },
+                "horas": {
                   "type": "integer"
                 },
-                "aula": {
+                "capa": {
                   "type": "string"
                 },
-                "exercicios": {
+                "aulas": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-                "videoUrl": {
+                "slug": {
                   "type": "string"
+                },
+                "ordenacao_da_trilhas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "pilars": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -649,25 +596,12 @@
           }
         }
       },
-      "NewAula": {
-        "required": [
-          "titulo",
-          "ordem"
-        ],
+      "NewPilar": {
         "properties": {
-          "titulo": {
+          "nome": {
             "type": "string"
           },
-          "descricao": {
-            "type": "string"
-          },
-          "ordem": {
-            "type": "integer"
-          },
-          "curso": {
-            "type": "string"
-          },
-          "partes": {
+          "cursos": {
             "type": "array",
             "items": {
               "type": "string"
@@ -689,7 +623,7 @@
   },
   "tags": [
     {
-      "name": "Aula"
+      "name": "Pilar"
     }
   ]
 }

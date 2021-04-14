@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ordenacao-da-trilhas",
+      "handler": "ordenacao-da-trilha.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ordenacao-da-trilhas/count",
+      "handler": "ordenacao-da-trilha.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ordenacao-da-trilhas/:id",
+      "handler": "ordenacao-da-trilha.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ordenacao-da-trilhas",
+      "handler": "ordenacao-da-trilha.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ordenacao-da-trilhas/:id",
+      "handler": "ordenacao-da-trilha.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ordenacao-da-trilhas/:id",
+      "handler": "ordenacao-da-trilha.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

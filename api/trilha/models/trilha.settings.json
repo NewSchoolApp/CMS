@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trilhas",
+  "info": {
+    "name": "trilha"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "ordenacao_da_trilhas": {
+      "via": "trilha",
+      "collection": "ordenacao-da-trilha"
+    }
+  }
+}

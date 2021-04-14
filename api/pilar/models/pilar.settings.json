@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pilars",
+  "info": {
+    "name": "Pilar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "cursos": {
+      "collection": "curso",
+      "via": "pilars",
+      "dominant": true
+    }
+  }
+}
