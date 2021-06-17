@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campanhas",
+  "info": {
+    "name": "Campanha",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "InstallBeginTimestamp": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "ClickTimestamp": {
+      "type": "text",
+      "required": false,
+      "unique": false
+    },
+    "Referrer": {
+      "type": "text",
+      "required": false
+    }
+  },
+  "autoPK": true,
+  "autoCreatedAt": true,
+  "autoUpdatedAt": true
+}
