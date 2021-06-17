@@ -11,13 +11,33 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "InstallBeginTimestamp": {
-      "type": "text",
+    "UniversalId": {
+      "type": "string",
       "required": true,
       "unique": true
     },
+    "Model": {
+      "type": "string",
+      "required": false
+    },
+    "Platform": {
+      "type": "string"
+    },
+    "Version": {
+      "type": "string"
+    },
+    "InstallBeginDatetime": {
+      "type": "datetime",
+      "required": true,
+      "unique": false
+    },
+    "InstallBeginTimestamp": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
     "ClickTimestamp": {
-      "type": "text",
+      "type": "string",
       "required": false,
       "unique": false
     },

@@ -517,13 +517,28 @@
       "Campanha": {
         "required": [
           "id",
+          "UniversalId",
           "InstallBeginTimestamp",
-          "ClickTimestamp",
           "Referrer"
         ],
         "properties": {
           "id": {
             "type": "string"
+          },
+          "UniversalId": {
+            "type": "string"
+          },
+          "Model": {
+            "type": "string"
+          },
+          "Platform": {
+            "type": "string"
+          },
+          "Version": {
+            "type": "string"
+          },
+          "InstallBeginDatetime": {
+            "type": "datetime"
           },
           "InstallBeginTimestamp": {
             "type": "string"
@@ -538,11 +553,26 @@
       },
       "NewCampanha": {
         "required": [
+          "UniversalId",
           "InstallBeginTimestamp",
-          "ClickTimestamp",
           "Referrer"
         ],
         "properties": {
+          "UniversalId": {
+            "type": "string"
+          },
+          "Model": {
+            "type": "string"
+          },
+          "Platform": {
+            "type": "string"
+          },
+          "Version": {
+            "type": "string"
+          },
+          "InstallBeginDatetime": {
+            "type": "datetime"
+          },
           "InstallBeginTimestamp": {
             "type": "string"
           },
