@@ -47,13 +47,9 @@
     "slug": {
       "type": "string"
     },
-    "ordenacao_da_trilhas": {
-      "collection": "ordenacao-da-trilha",
-      "via": "curso"
-    },
     "destaques": {
       "via": "cursos",
-      "collection": "highlight"
+      "collection": "destaque"
     },
     "trilhas": {
       "via": "cursos",

@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "pilars",
+  "collectionName": "destaques",
   "info": {
-    "name": "Pilar",
+    "name": "Destaque",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
     },
     "cursos": {
       "collection": "curso",
-      "via": "pilars",
+      "via": "destaques",
       "dominant": true
     },
     "capa": {
