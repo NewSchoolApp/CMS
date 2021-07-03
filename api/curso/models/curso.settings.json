@@ -51,6 +51,14 @@
       "collection": "ordenacao-da-trilha",
       "via": "curso"
     },
+    "destaques": {
+      "via": "cursos",
+      "collection": "highlight"
+    },
+    "trilhas": {
+      "via": "cursos",
+      "collection": "trail"
+    },
     "pilars": {
       "via": "cursos",
       "collection": "pilar"

@@ -10,12 +10,22 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "nome": {
+    "titulo": {
       "type": "string"
     },
-    "ordenacao_da_trilhas": {
-      "via": "trilha",
-      "collection": "ordenacao-da-trilha"
+    "cursos": {
+      "collection": "curso",
+      "via": "trails",
+      "dominant": true
+    },
+    "capa": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
     }
   }
 }
