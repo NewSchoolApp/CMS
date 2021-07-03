@@ -53,7 +53,7 @@
     },
     "trilhas": {
       "via": "cursos",
-      "collection": "trail"
+      "collection": "trilha"
     },
     "pilars": {
       "via": "cursos",
